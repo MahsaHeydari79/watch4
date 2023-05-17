@@ -1,0 +1,200 @@
+<div class="bo">
+<header class="hed">
+  <div class="w3-container w3-teal">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="header-conteiner">
+            <ul>
+              <li class="row">Welcome to Our store Multikart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="header-conteiner">
+          <ul>
+            <li class="row">Call Us: 123-456-7890</li>
+          </ul>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="10px">
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+<mat-toolbar class="mat-t">
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <mat-menu #appMenu="matMenu">
+    <ng-template matMenuContent>
+      <button mat-menu-item>CLOTHING</button>
+      <button mat-menu-item>BAGS</button>
+      <button mat-menu-item>FOOTWEAR</button>
+      <button mat-menu-item>WATCHES</button>
+      <button mat-menu-item>ACCESSORIES</button>
+      <button mat-menu-item>HOUSE OF DESIGN</button>
+      <button mat-menu-item>BEAUTY & PERSONAL CARE</button>
+      <button mat-menu-item>HOME & DECOR</button>
+      <button mat-menu-item>KITCHEN</button>
+    </ng-template>
+  </mat-menu>
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+
+  <!-- 
+  <div class="sidebar-opener" (click)="sidebarShow = !sidebarShow">
+	  Click me to open/close the sidebar
+</div>
+
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+    <div
+        class="sidebar-close"
+        (click)="sidebarShow = !sidebarShow"
+    >
+        X
+    </div>
+	  <div class="sidebar-content">
+        <h2>Sidebar</h2>
+        <div>Home Page</div>
+        <div>About Us</div>
+        <div>Services</div>
+        <div>Prices</div>
+        <div>Downloads</div>
+        <div>Contact Us</div>
+	  </div>
+</div> -->
+
+  <div class="mat-t" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px"
+    style="width: 100rem; height: 3rem;">
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/icon/logo-14.png">
+
+    <div class="col-lg-6">
+      <li class="row">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only"></span></a>
+              <a class="nav-link" href="#">SHOP</a>
+              <a class="nav-link" href="#">PRODUCTS</a>
+              <a class="nav-link disabled" href="#">FEATURES</a>
+              <a class="nav-link" href="#">PAGES</a>
+              <a class="nav-link" href="#">BLOGS</a>
+            </li>
+          </ul>
+        </div>
+
+      </li>
+    </div>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon search-icon" aria-label="Example icon-button with search icon">
+      <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon Settings" aria-label="Example icon-button with Settings icon">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon shop-icon" aria-label="Example icon-button with shop icon">
+      <mat-icon>shop</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="col-lg-6">
+    <li class="row">
+      <!-- <mat-menu #appMenu="matMenu">
+        <ng-template matMenuContent>
+          <button mat-menu-item>Settings</button>
+          <button mat-menu-item>Help</button>
+        </ng-template>
+      </mat-menu>
+      
+      <button mat-icon-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button> -->
+      <!-- <nav class="navmg">
+        <div class="navicon">
+          <div></div>
+        </div>
+        <a class="aa">This was</a>
+        <a class="aa">Made using</a>
+        <a class="aa">The clip-path property</a>
+        <a class="aa">Transition in</a>
+        <a class="aa">CSS only</a>
+      </nav> -->
+    </li>
+  </div>
+  <!-- <mat-card fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" style="width: 100rem; height: 3rem;" > -->
+  <!-- <div class="col-lg-6">
+    <img src="../img/logo.png">
+    <li class="row">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME <span class="sr-only"></span></a>
+            <a class="nav-link" href="#">SHOP</a>
+            <a class="nav-link" href="#">PRODUCTS</a>
+            <a class="nav-link disabled" href="#">FEATURES</a>
+            <a class="nav-link" href="#">PAGES</a>
+            <a class="nav-link" href="#">BLOGS</a>
+          </li>
+        </ul>
+      </div>
+   
+    </li>
+  </div> -->
+  <!-- </mat-card> -->
+</nav>
+<div class="sideimg" style="width: 1530px; height: 400px; text-align:center;margin:0; padding:0;">
+  <ng-image-slider #nav [images]="imageObject" [infinite]="false" [autoSlide]="1"
+    [imageSize]="{width: '100%', height: 350}" slideImage="1">
+  </ng-image-slider>
+</div>
+<div class="ima" fxLayout="row" fxLayoutAlign="space-evenly" fxLayoutGap="5px" style="margin-bottom: 30px;">
+  <div>
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/logos/1.png">
+  </div>
+  <div>
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/logos/2.png">
+  </div>
+  <div>
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/logos/3.png">
+  </div>
+  <div>
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/logos/4.png">
+  </div>
+  <div>
+    <img src="https://angular.pixelstrap.com/multikart/assets/images/logos/5.png">
+  </div>
+</div>
+
+<div class="banner" fxLayout="row" fxLayoutAlign="space-evenly" fxLayoutGap="5px" style="margin-top: 30px;">
+  <img src="https://angular.pixelstrap.com/multikart/assets/images/offer-banner-2.jpg">
+</div>
+<!-- <br><br><br><br><br><br><br>
+<footer class="foot">
+  <div class="foot-image">
+    <img url="src/img/9.jpg">
+  </div>
+</footer> -->
+</div>
